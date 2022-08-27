@@ -1,0 +1,140 @@
+/* all */
+* {
+  box-sizing: border-box;
+  color: #eeeeee;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-top: -5px;
+  color: #eeeeee;
+}
+
+h3 {
+  color: #eeeeee;
+}
+
+.border-gambar {
+  border-radius: 50px;
+}
+
+/* header */
+header {
+  display: inline;
+}
+
+nav {
+  background-color: #a66cff;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  overflow: auto;
+}
+
+#logo {
+  float: left;
+  width: 60%;
+  font-size: 18px;
+  text-decoration: none;
+  color: #eaffd0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #eaffd0;
+  float: right;
+  margin-right: 30px;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+/* main */
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #9c9efe;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tabel {
+  border: 1px solid white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabel tr td {
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+
+/* aside */
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+/* footer */
+footer {
+  padding: 15px;
+  color: #eaffd0;
+  background-color: #a66cff;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+#sembunyi {
+  display: none;
+}
