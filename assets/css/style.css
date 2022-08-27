@@ -1,6 +1,7 @@
 /* all */
 * {
   box-sizing: border-box;
+  color: #eeeeee;
 }
 
 body {
@@ -10,11 +11,16 @@ body {
 }
 
 h2 {
-  color: #00a2c6;
+  margin-top: -5px;
+  color: #eeeeee;
 }
 
 h3 {
-  color: #00a2c6;
+  color: #eeeeee;
+}
+
+.border-gambar {
+  border-radius: 50px;
 }
 
 /* header */
@@ -22,32 +28,36 @@ header {
   display: inline;
 }
 
-.jumbotron {
-  padding: 60px;
-  background-color: #00c8eb;
-  text-align: center;
-  font-size: 20px;
-  color: white;
-}
-
 nav {
-  background-color: #00a2c6;
+  background-color: #a66cff;
   padding: 5px;
   position: sticky;
   top: 0;
 }
 
+nav ul {
+  overflow: auto;
+}
+
+#logo {
+  float: left;
+  width: 60%;
+  font-size: 18px;
+  text-decoration: none;
+  color: #eaffd0;
+}
+
 nav li {
   display: inline;
   list-style-type: none;
-  margin-right: 20px;
 }
 
 nav a {
   font-size: 18px;
-  font-weight: 400;
   text-decoration: none;
-  color: white;
+  color: #eaffd0;
+  float: right;
+  margin-right: 30px;
 }
 
 nav a:hover {
@@ -70,6 +80,7 @@ main {
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
+  background-color: #9c9efe;
 }
 
 .featured-image {
@@ -77,6 +88,18 @@ main {
   max-height: 300px;
   object-fit: cover;
   object-position: center;
+}
+
+.tabel {
+  border: 1px solid white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabel tr td {
+  border-bottom: 1px solid white;
+  padding: 10px;
 }
 
 /* aside */
@@ -96,9 +119,9 @@ aside {
 
 /* footer */
 footer {
-  padding: 20px;
-  color: white;
-  background-color: #00a2c6;
+  padding: 15px;
+  color: #eaffd0;
+  background-color: #a66cff;
   text-align: center;
   font-weight: bold;
 }
@@ -110,4 +133,8 @@ footer {
     width: 100%;
     padding: 0;
   }
+}
+
+#sembunyi {
+  display: none;
 }
